@@ -1,10 +1,31 @@
 /* eslint-disable jsx-a11y/alt-text */
 import thumbnail from "../assets/wedding-bazaar-og.jpg";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const BlogDetails = () => {
   return (
     <>
+      <Helmet>
+        <script
+          type="text/javascript"
+          src="https://platform-api.sharethis.com/js/sharethis.js#property=624d7a642918df0019167b3b&product=inline-follow-buttons"
+          async="async"
+        ></script>
+        {/* All the meta tag for SEO should be included here */}
+        <meta name="description" content=" " />
+        <meta name="keywords" content=" " />
+        <meta name="author" content=" " />
+        <meta property="og:title" content=" " />
+        <meta property="og:type" content=" " />
+        <meta property="og:url" content=" " />
+        <meta property="og:image" content=" " />
+
+        <meta name="twitter:title" content=" " />
+        <meta name="twitter:description" content=" " />
+        <meta name="twitter:image" content=" " />
+        <meta name="twitter:card" content=" " />
+      </Helmet>
       <section className="border-b">
         <nav className="max-w-screen-xl px-4 mx-auto py-2">
           <ul className="flex items-center">
@@ -83,34 +104,75 @@ const BlogDetails = () => {
       </section>
       <section>
         <div className="prose max-w-screen-xl mx-auto p-4 py-12">
-            <div>
-                <Link to="blog/category" className="no-underline">
-                    <div className="text-lg text-red-500">Blog Category</div>
-                </Link>
-            </div>
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, veritatis?</h1>
-            <div className="font-bold text-sm italic">16th May 2020</div>
-            <div>
-                <img className="h-[400px] w-full object-cover rounded-lg" src={thumbnail} alt="" />
-            </div>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quibusdam, nobis cumque vel temporibus molestiae eveniet? Recusandae culpa aliquid commodi veniam. Esse quos eveniet, architecto possimus dolores sed accusantium a! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quibusdam, nobis cumque vel temporibus molestiae eveniet? Recusandae culpa aliquid commodi veniam. Esse quos eveniet, architecto possimus dolores sed accusantium a!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quibusdam, nobis cumque vel temporibus molestiae eveniet? Recusandae culpa aliquid commodi veniam. Esse quos eveniet, architecto possimus dolores sed accusantium a! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quibusdam, nobis cumque vel temporibus molestiae eveniet? Recusandae culpa aliquid commodi veniam. Esse quos eveniet, architecto possimus dolores sed accusantium a!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quibusdam, nobis cumque vel temporibus molestiae eveniet? Recusandae culpa aliquid commodi veniam. Esse quos eveniet, architecto possimus dolores sed accusantium a! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quibusdam, nobis cumque vel temporibus molestiae eveniet? Recusandae culpa aliquid commodi veniam. Esse quos eveniet, architecto possimus dolores sed accusantium a!
-            </p>
-            <h3>Lorem ipsum dolor sit.</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quibusdam, nobis cumque vel temporibus molestiae eveniet? Recusandae culpa aliquid commodi veniam. Esse quos eveniet, architecto possimus dolores sed accusantium a! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quibusdam, nobis cumque vel temporibus molestiae eveniet? Recusandae culpa aliquid commodi veniam. Esse quos eveniet, architecto possimus dolores sed accusantium a!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quibusdam, nobis cumque vel temporibus molestiae eveniet? Recusandae culpa aliquid commodi veniam. Esse quos eveniet, architecto possimus dolores sed accusantium a! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quibusdam, nobis cumque vel temporibus molestiae eveniet? Recusandae culpa aliquid commodi veniam. Esse quos eveniet, architecto possimus dolores sed accusantium a!
-            </p>
+          <div>
+            <Link to="blog/category" className="no-underline">
+              <div className="text-lg text-red-500">Blog Category</div>
+            </Link>
+          </div>
+          <h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+            veritatis?
+          </h1>
+          <div className="font-bold text-sm italic">16th May 2020</div>
+
+          <div>
+            <img
+              className="h-[400px] w-full object-cover rounded-lg"
+              src={thumbnail}
+              alt=""
+            />
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+            quibusdam, nobis cumque vel temporibus molestiae eveniet? Recusandae
+            culpa aliquid commodi veniam. Esse quos eveniet, architecto possimus
+            dolores sed accusantium a! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quos quibusdam, nobis cumque vel temporibus
+            molestiae eveniet? Recusandae culpa aliquid commodi veniam. Esse
+            quos eveniet, architecto possimus dolores sed accusantium a!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+            quibusdam, nobis cumque vel temporibus molestiae eveniet? Recusandae
+            culpa aliquid commodi veniam. Esse quos eveniet, architecto possimus
+            dolores sed accusantium a! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quos quibusdam, nobis cumque vel temporibus
+            molestiae eveniet? Recusandae culpa aliquid commodi veniam. Esse
+            quos eveniet, architecto possimus dolores sed accusantium a!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+            quibusdam, nobis cumque vel temporibus molestiae eveniet? Recusandae
+            culpa aliquid commodi veniam. Esse quos eveniet, architecto possimus
+            dolores sed accusantium a! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quos quibusdam, nobis cumque vel temporibus
+            molestiae eveniet? Recusandae culpa aliquid commodi veniam. Esse
+            quos eveniet, architecto possimus dolores sed accusantium a!
+          </p>
+          <h3>Lorem ipsum dolor sit.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+            quibusdam, nobis cumque vel temporibus molestiae eveniet? Recusandae
+            culpa aliquid commodi veniam. Esse quos eveniet, architecto possimus
+            dolores sed accusantium a! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quos quibusdam, nobis cumque vel temporibus
+            molestiae eveniet? Recusandae culpa aliquid commodi veniam. Esse
+            quos eveniet, architecto possimus dolores sed accusantium a!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+            quibusdam, nobis cumque vel temporibus molestiae eveniet? Recusandae
+            culpa aliquid commodi veniam. Esse quos eveniet, architecto possimus
+            dolores sed accusantium a! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quos quibusdam, nobis cumque vel temporibus
+            molestiae eveniet? Recusandae culpa aliquid commodi veniam. Esse
+            quos eveniet, architecto possimus dolores sed accusantium a!
+          </p>
         </div>
-    </section>
+        <div className="max-w-screen-xl mx-auto px-4 pb-12">
+          <div className="sharethis-inline-share-buttons"></div>
+        </div>
+      </section>
     </>
   );
 };
